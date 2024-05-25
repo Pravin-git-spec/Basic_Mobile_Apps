@@ -1,1 +1,3 @@
 # Basic_Mobile_Apps
+
+I have merged all small apps in a single mobile screen...
