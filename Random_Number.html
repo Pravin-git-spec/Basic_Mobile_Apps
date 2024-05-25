@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Guess the Number
+        </title>
+        <style>
+            body{
+                background-color: rgb(157, 245, 216);
+            }
+            .main{
+                width: 500px;
+                height: 500px;
+                border: 1px solid aqua;
+                border-radius: 5px;
+                position: relative;
+                display: block;
+                text-align: center;
+                background-color: rgb(0, 255, 255);
+                box-shadow: 0 0 10px grey;
+                margin: 3% 30%;
+            }
+            #in{
+                border: none;
+                border-radius: 5px;
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h2>Guess the Number</h2>
+            <input type="number" id="in"/>
+            <button onclick="check()" style="cursor: pointer;">Check</button><br>
+            <p id="res">Guess !!!</p>
+            <p id="score">Your Score :<span id="s">10</span></p>
+        </div>
+
+        <script>
+            function check(){
+                var input = document.getElementById("in").value
+                var ans = Math.floor(Math.random()*10)+1
+                if(Number(input) == ans){
+                    document.getElementById("res").innerHTML = "You are right!!!"
+                    alert("YOU WON !!!")
+                }
+                else{
+                    var sc = document.getElementById("s").textContent
+                    if(Number(sc)>0){
+                        document.getElementById("s").innerHTML = Number(sc)-1
+                    }
+                    document.getElementById("res").innerHTML = " You are wrong!!!"
+                }
+            }
+        </script>
+    </body>
+</html>

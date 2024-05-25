@@ -1,0 +1,33 @@
+div{
+    width: 25%;
+    height: 25%;
+    margin: 7% 40%;
+    border-radius: 7px;
+
+    background-image: url('https://images.pexels.com/photos/2088170/pexels-photo-2088170.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover; /* or contain, auto, specific dimensions */
+    background-repeat: no-repeat; /* or repeat, repeat-x, repeat-y */
+    background-position: center center;
+    
+}
+img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+button{
+    border: none;
+    border-radius: 3px;
+    
+    background-color: white;
+    margin: 16.5px;
+    cursor: pointer;
+    background: transparent;
+}
+button span{
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    color: #000;
+}
+
